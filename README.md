@@ -4,7 +4,7 @@
 <b>Discipline | <b>Computer Science Engineering
 :--|:--|
 <b> Lab | <b> Web Designing Lab
-<b> Experiment|     <b> 5. 5.	To create an html page to demonstrate exception handling in javascript
+<b> Experiment|     <b> 5.	To create an html page to demonstrate exception handling in javascript
 
 ### About the Experiment 
 
