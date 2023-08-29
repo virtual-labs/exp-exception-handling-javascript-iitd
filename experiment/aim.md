@@ -1,1 +1,1 @@
-### Aim of the experiment
+## To create an HTML page to demonstrate exception handling in JavaScript.
