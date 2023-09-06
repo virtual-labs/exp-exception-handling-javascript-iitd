@@ -1,4 +1,3 @@
-### THEORY
 Handling errors in code and then executing them is known as exception handling.
 We use 4 statements while handling exceptions:<br>
 1.	Try- We use it in a block of code for errors.<br>
