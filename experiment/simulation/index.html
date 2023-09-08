@@ -1,13 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <title>Code Editor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="experiment/simulation/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>  
+  <h1>EXCEPTION HANDLING IN JAVASCRIPT</h1>
+      <center>
+          <div class="container" >
+            <div class="row">
+
+                <!-- TRY BLOCK STARTS -->
+                <div class="col-sm-4">
+                    <div class="tbox">
+                        <b style="font-size: large ;">Try-Catch</b> <br>
+                         The code which might have error is kept within the try block. <br>In case any error occur, it passes to the catch{} block for taking suitable actions and handle the error. Otherwise, it executes the code written within.
+                        <br>
+            <button type="button" class="btn btn-success" onclick='document.getElementById("htmlCode").
+            innerHTML=` <html>
+<head> Exception Handling</br></head>
+<body>
+<script>
+try{
+var array1= ["34","5","31","2","44","7"]; //array1 is an array
+document.write(array1);    // displays elements of array1
+document.write(array2); //array2 is undefined but still trying to fetch its value. Thus catch block will be invoked
+}catch(e){
+alert("There is error which shows "+e.message); //Handling error
+}
+</script>
+</body>
+</html>`'>
+            Implement try-catch statement </button></div>
+            </div>
+            <!-- TRY BLOCK CLOSES  -->
+            
+            <!-- CATCH STARTS -->
+            <div class="col-sm-4">
+                <div class="tbox">
+                   <b style="font-size: large;">Try-Catch-Throw</b> <br>
+                    Throw statement is used for user-defined errors.User can define and throw custom errors.<br>When throw statement is executed,the statement after it will not execute.The control will directly pass to catch block.
+                    <br>
+                  <button type="button" class="btn btn-success" onclick='document.getElementById("htmlCode").
+                  innerHTML=`<html>  
+<head>Exception Handling<br></head>  
+<body>  
+<script>  
+try {  
+   throw new Error("This is throw keyword"); //throw statement.  
+}  
+catch (err) {  
+  document.write(err.message); // This will generate an error message  
+}  
+</script>  
+</body>  
+</html> `'>
+                Implement try-catch-throw statement </button></div>
+            </div>
+            <!-- CATCH CLOSES -->
+
+            <!-- THROW STARTS -->
+            <div class="col-sm-4">
+                <div class="tbox">
+                   <b style="font-size: large;">Try-Catch-Finally</b> <br>
+                   Finally is an optional block of statements which is executed at last.<br> Any exception is thrown or not, finally block code, if present, will definitely execute.
+                   <br><br>
+                  <button type="button" class="btn btn-success" onclick='document.getElementById("htmlCode").
+                  innerHTML=`<html>  
+<head>Exception Handling<br></head>  
+<body>  
+<script>  
+try{  
+var x=2;  
+if(x==2)  
+document.write("Correct ");  
+}  
+catch(Error){  
+document.write("Error found"+e.message);  
+}  
+finally{  
+document.write("Value of x is 2 ");  
+}  
+</script>  
+</body>  
+</html>   `'>
+                Implement try-catch-finally statement </button>
+                </div>
+            </div>
+            <!-- THROW CLOSES -->
+
+            </div>
+            </div>
+
+
+    </center>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="code">
+                        <textarea id="htmlCode" style="height: 96%">
+Choose from above 4 statements and implement them one by one.   
+                      </textarea>  
+                      <button type="button" style="background: green; " class="btn btn-success" onclick="showPreview()">
+                      Try this out
+                      </button>    
+                      
+                    </div>
+                </div>
+                    <div class="col-sm-6">
+                        <div class="preview">
+                            <iframe id="preview-window"></iframe>
+                          </div>
+                    </div>
+            </div>
+        </div>
+        </center>
+        
+        <center> 
+        <div class="container">
+            <div class="row">
+                <h3> Try yourself below.</h3>
+                    <div class="col-sm-6">
+                        <div class="code">
+                           
+                          <textarea id="htmlCode2" style="height: 96%">
+<!DOCTYPE html>
+<head>
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <h4>Enter your code here</h4>
+    <script type="text/javascript">
+      //Enter javascript code here
+    </script>
 </body>
 </html>
+</textarea>  
+<button type="button" style="background-color: rgb(111, 151, 211); " class="btn btn-success" onclick="showPreview2()">
+Try this out
+</button> 
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="preview">
+                            <iframe id="preview-window2"></iframe>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        </center>
+            <br>
+            <br>
+    <script>
+        function showPreview(){
+        var htmlCode = document.getElementById("htmlCode").value;
+        var frame = document.getElementById("preview-window").contentWindow.document;
+        frame.open();
+        frame.write(htmlCode);
+        frame.close(); 
+        }
+              
+         function showPreview2(){
+        var htmlCode2 = document.getElementById("htmlCode2").value+"";
+        var frame = document.getElementById('preview-window2').contentWindow.document;
+        frame.open();
+        frame.write(htmlCode2);
+        frame.close();
+        }
+    </script>
+</body>
+</html>
+                  
