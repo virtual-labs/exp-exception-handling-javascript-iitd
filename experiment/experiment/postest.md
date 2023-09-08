@@ -1,6 +1,6 @@
 ## Post test
 <br>
-Q1) _____ error occurs when code is not correct? <br>
+Q1)  _____ error occurs when code is not correct? <br>
 a.	Runtime error<br>
 b.	<b>Syntax error</b><br>
 c.	Logical error<br>
