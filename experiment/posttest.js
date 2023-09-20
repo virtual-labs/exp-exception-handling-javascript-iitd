@@ -90,37 +90,39 @@
 
   const myQuestions = [
     {
-      question: ". _____ error occurs when code is not correct.",  ///// Write the question inside double quotes
+      question: "Which of the following statements come in pairs?",  ///// Write the question inside double quotes
       answers: {
-        a: "Runtime error",                  ///// Write the option 1 inside double quotes
-        b: "Syntax error",                  ///// Write the option 2 inside double quotes
-        c: "Logical error",                  ///// Write the option 3 inside double quotes
-        d: "All of these"                   ///// Write the option 4 inside double quotes
+        a: "Try and Throw",                  ///// Write the option 1 inside double quotes
+        b: "Try and Catch",                  ///// Write the option 2 inside double quotes
+        c: "Finally and Throw",                  ///// Write the option 3 inside double quotes
+        d: "Catch and Throw"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
     {
-     question: "Which error causes the program to execute or terminate abnormally?",  ///// Write the question inside double quotes
+      question: "Customized errors are created by ________.",  ///// Write the question inside double quotes
       answers: {
-        a: "Runtime error",                  ///// Write the option 1 inside double quotes
-        b: "Syntax error",                  ///// Write the option 2 inside double quotes
-        c: "Logical error",                  ///// Write the option 3 inside double quotes
+        a: "Try",                  ///// Write the option 1 inside double quotes
+        b: "Catch",                  ///// Write the option 2 inside double quotes
+        c: "Finally",                  ///// Write the option 3 inside double quotes
+        d: "Throw"                   ///// Write the option 4 inside double quotes
+      },
+      correctAnswer: "d"                ///// Write the correct option inside double quotes
+    },
+
+    {
+      question: "Which statement is executed when try statement have errors?",  ///// Write the question inside double quotes
+      answers: {
+        a: "Throw",                  ///// Write the option 1 inside double quotes
+        b: "Catch",                  ///// Write the option 2 inside double quotes
+        c: "Finally",                  ///// Write the option 3 inside double quotes
         d: "None of these"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
     									                  ///// this line
-    {
-     question: "Which error occurs during runtime?",  ///// Write the question inside double quotes
-      answers: {
-        a: "Runtime error",                  ///// Write the option 1 inside double quotes
-        b: "Syntax error",                  ///// Write the option 2 inside double quotes
-        c: "Logical error",                  ///// Write the option 3 inside double quotes
-        d: "None of these"                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },                                 
+
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
         till closing curly braces comma ( }, )
